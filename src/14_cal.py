@@ -22,3 +22,17 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+x = input("Please Enter a month: ")
+
+def renderMonth(m):
+  m = int(m)
+  c = calendar.TextCalendar()
+  print(c.formatmonth(2020, m))
+
+if x == '':
+  y = datetime.now().month
+  renderMonth(y)
+else: 
+  renderMonth(x)
+
